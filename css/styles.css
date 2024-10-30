@@ -1,0 +1,581 @@
+/*
+Styles.css
+Auteur : Nicolas Desmarets
+Copyright (c) 2019 Lockee.fr
+*/
+.lockee {
+	line-height: normal;
+	font-weight: normal;
+	box-sizing: border-box;
+}
+
+.lockee * {
+	box-sizing: border-box;
+}
+.lockee select{
+	margin: 5px 0;
+	width: 100%;
+	border: solid 1px;
+	padding: 8px 10px;
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+	border-radius: 15px;
+}
+.lockee textarea{
+	-webkit-appearance: none;
+	margin: 5px 0;
+	width: 100%;
+	border: solid 1px;
+	padding: 0 10px;
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+	border-radius: 15px;
+}
+
+.preview{
+	font-size: 8px;
+	text-align: left !important;
+}
+.preview span, .preview img{
+	margin: 2px;
+}
+
+#wrapper-code svg.preview{
+	width:200px;
+	margin-right:calc(100% - 200px);
+}
+
+#isopen{
+	display: none;
+	position: relative;
+}
+.lockee .content{
+	position: relative;
+	overflow-wrap: break-word;
+	padding: 10px;
+	padding-bottom: 20px;
+	min-height: 80px;
+	height: auto;
+	overflow:hidden;
+	width: 100%;
+	border: 0;
+	border-image-slice: 20 20 20 20 fill;
+	border-image-width: 20px 20px 20px 20px;
+	border-image-outset: 0px 0px 0px 0px;
+	border-image-repeat: round stretch;
+}
+.lockee .content *{
+}
+.lockee .content:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	right: 0;
+	width: 20px;
+	height: 20px;
+	z-index: 1000;
+}
+.lockee .content div{
+	position: relative;
+	height: 0;
+	padding-bottom: 56.25%;
+}
+.lockee .content #videoplayer{
+	border: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.lockee .content img{
+	vertical-align: middle;
+	border: 0;
+	max-width: 100%;
+	height: auto;
+}
+.lockee .content audio{
+	width: 100%;
+	margin-top: 20px;
+}
+.lockee .big{
+	font-size: 20px;
+	font-weight: bold;
+}
+.lockee .small{
+	max-width:200px;
+}
+.lockee .field{
+	width: 100%;
+	padding: 5px;
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.lockee #errors{
+	width: 100%;
+	text-align: center;
+	margin: 10px auto;
+}
+.lockee .title{
+	margin: 8px auto;
+	font-weight: normal;
+	font-size: 24px;
+	text-align: center;
+}
+.lockee .subtitle{
+	margin: 8px auto;
+	font-size: 16px;
+	font-weight: normal;
+	font-style: italic;
+	text-align: center;
+}
+.lockee .menu-title{
+	font-size: 24px;
+	font-weight: normal;
+}
+.lockee .menu-button{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: block;
+	margin: 10px 0;
+	font-family: 'Arial', sans-serif;
+	text-decoration: none;
+	font-weight: normal;
+	font-size: 24px;
+	padding: 8px 0;
+	cursor: pointer;
+	outline: none;
+	border-radius: 15px;
+	text-align: center;
+	width: 100%;
+	border: 0;
+}
+.lockee .menu-tab{
+	margin: 10px 0;
+	font-size: 24px;
+	padding: 8px 0;
+	cursor: pointer;
+	border-radius: 15px;
+	text-align: center;
+	width: 100%;
+	border: 0;
+}
+.lockee #formopen{
+	position:relative;
+	width:320px;
+	margin:auto;
+}
+.lockee #wrongcode{
+	font-family: 'Arial', sans-serif;
+	display: none;
+	position: absolute;
+	text-align: center;
+	border-radius: 10px;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 10;
+}
+.lockee #wrongcode .alert{
+	position: absolute;
+	top: calc(50% - 16px);
+	width: 100%;
+	font-size:32px;
+}
+.lockee #wrapper-code{
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+}
+.lockee #code{
+	text-align: center;
+	font-family: 'Arial', sans-serif;
+	margin: 3px;
+}
+.lockee .touch{
+	height: auto;
+	border-radius: 15px;
+	font-family: 'Arial', sans-serif;
+	text-align: center;
+	cursor: pointer;
+	margin: 3px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.lockee .restart{
+	width: auto;
+	border-radius: 15px;
+	font-family: sans-serif;
+	font-size: 32px;
+	text-align: center;
+	cursor: pointer;
+	margin: 3px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.lockee .confirm{
+	width: auto;
+	border-radius: 15px;
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 32px;
+	text-align: center;
+	cursor: pointer;
+	margin: 3px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.lockee .cancel{
+	width: auto;
+	border-radius: 15px;
+	font-family: sans-serif;
+	font-size: 32px;
+	text-align: center;
+	cursor: pointer;
+	margin: 3px;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.lockee .mini{
+	display: inline-block;
+	border-radius: 5px;
+	width: 46px;
+	height: 46px;
+	margin: 3px;
+	line-height: 46px;
+	font-size: 36px;
+	text-align: center;
+}
+.lockee .preview .mini{
+	width: 23px;
+	height: 23px;
+	line-height: 23px;
+	font-size: 18px;
+}
+.lockee .pad{
+	table-layout: fixed;
+	width: 320px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+}
+.lockee .pad table{
+	width: 100%;
+	margin: 0;
+	border: none;
+	border-collapse: inherit;
+	border-spacing: inherit;
+}
+.lockee .pad table tr, .lockee .pad table tr:nth-child(even), .lockee .pad table tr:nth-child(odd) {
+	border: none;
+	background: none;
+}
+.lockee .pad table td {
+	width: 33.33%;
+	border: none;
+	padding:0;
+}
+.lockee .pad label {
+	display:block;
+	width: 100%;
+}
+.lockee #question{
+	font-size: 24px;
+	border-radius: 15px;
+	text-align: center;
+}
+.lockee #actions .itemaction{
+	font-size: 24px;
+	line-height: 24px;
+	padding: 8px 0;
+	cursor: pointer;
+	border-radius: 15px;
+	text-align: center;
+	margin: 10px 0;
+}
+.lockee #types .itemtype{
+	font-size: 24px;
+	line-height: 24px;
+	padding: 8px 0;
+	cursor: pointer;
+	border-radius: 15px;
+	text-align: center;
+	margin: 10px 0;
+}
+
+.lockee #directions .touch img{
+	width: 80%;
+	height: auto;
+	vertical-align:middle;
+}
+
+.lockee #numbers .touch{
+	font-size: 48px;
+	font-weight: normal;
+}
+
+.lockee #colors .touch{
+	font-size: 16px;
+	padding: 16px 0;
+}
+.lockee #colors .delete{
+	font-size: 48px;
+	line-height: 16px;
+}
+.lockee #colors #reset{
+	width: 100%;
+	height: auto;
+}
+
+.lockee .codeentry{
+	width: calc(100% - 20px);
+	border: solid 1px;
+	padding: 0 10px;
+	font-family: 'Arial', sans-serif;
+	font-size: 24px;
+	border-radius: 15px;
+	margin: 3px;
+}
+
+
+.lockee #schema{
+	touch-action: none;
+}
+
+.lockee img.qrcode {
+	max-width:240px;
+	border-radius: 5px;
+}
+
+.lockee img.schema {
+	max-width:240px;
+	border-radius: 5px;
+}
+
+.lockee img.switchs {
+	max-width:240px;
+	border-radius: 5px;
+}
+
+.lockee svg.schema g.lock-lines line {
+	stroke-width: 2.5;
+	opacity: 1;
+	stroke-linecap: round;
+}
+
+.lockee svg.schema g.lock-dots circle {
+	stroke: transparent;
+	stroke-width: 13.5;
+}
+
+.lockee svg.schema g.lock-actives circle {
+	opacity: 1;
+	animation: lock-activate-dot .15s 0s ease 1;
+	transform-origin: center;
+}
+
+.lockee svg.schema g.lock-arrows path {
+	fill: none;
+	stroke-width: 1;
+	stroke-linecap: round;
+}
+
+.lockee .piano{
+	display: block;
+	width: 100%;
+	height:200px;
+}
+
+.lockee .piano-key{
+	width: calc(100% / 7);
+	height: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.lockee .piano-key .white{
+	height: 100%;
+	position: relative;
+	border: solid 1px;
+	border-radius: 0 0 10px 10px;
+}
+
+.lockee .piano-key .black{
+	height: 60%;
+	left: 100%;
+	position: absolute;
+	border: solid 1px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	top: 0;
+	width: 70%;
+	z-index: 1;
+	border-radius: 0 0 10px 10px;
+}
+
+.lockee .key .label{
+	font-size: 16px;
+	position: absolute;
+	bottom:0;
+	left:50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.lockee .key{
+	cursor: pointer;
+}
+
+.lockee .note {
+	font-size: 36px;
+}
+
+.lockee #play, .lockee #position, .lockee #address {
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.lockee #map{
+	width: 288px;
+	height: 200px;
+	margin: auto;
+	z-index: 0;
+}
+
+.lockee .onoff{
+	width: 70px;
+	height: 70px;
+	padding: 7px;
+	display: inline-block;
+	border: solid 1px;
+	cursor: pointer;
+}
+
+.lockee .onoff div{
+	width: 54px;
+	height: 54px;
+	margin: auto;
+	line-height: 54px;
+	font-size: 24px;
+	border: solid 1px;
+	user-select: none;
+}
+
+.lockee .onoff2{
+	width: 56px;
+	height: 56px;
+	padding: 7px;
+	display: inline-block;
+	border: solid 1px;
+	cursor: pointer;
+}
+
+.lockee .onoff2 div{
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	line-height: 40px;
+	font-size: 24px;
+	border: solid 1px;
+	user-select: none;
+}
+
+.lockee .on {
+	border: solid 1px;
+}
+
+.lockee #loading{
+	display:none;
+	line-height:20px;
+}
+
+.lockee .button {
+	text-decoration: none;
+	margin: 4px 0;
+	display: inline-block;
+	padding: 4px;
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.lockee .button span {
+	margin: auto 20px;
+	user-select: none;
+	cursor: pointer;
+}
+
+.lockee .oos {
+	position: relative;
+	width: 60px;
+	-webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+	margin: 3px 10px;
+}
+.lockee .oos-checkbox {
+	display: none;
+}
+.lockee .oos-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	border: 2px solid #999999; border-radius: 24px;
+}
+.lockee .oos-inner {
+	display: block;
+	width: 200%;
+	margin-left: -100%;
+	transition: margin 0.3s ease-in 0s;
+}
+.lockee .oos-inner:before, .oos-inner:after {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 28px;
+	padding: 0;
+	line-height: 28px;
+	font-size: 14px;
+	font-family: Trebuchet, Arial, sans-serif;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+.lockee .oos-inner:before {
+	content: "";
+	padding-left: 10px;
+}
+.lockee .oos-inner:after {
+	content: "";
+	padding-right: 10px;
+	text-align: right;
+}
+.lockee .oos-switch {
+	display: block;
+	width: 26px;
+	height: 26px;
+	margin: 3px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 28px;
+	border: 2px solid;
+	border-radius: 24px;
+	transition: all .3s ease-in 0;
+}
+.lockee .oos-checkbox:checked + .oos-label .oos-inner {
+	margin-left: 0;
+}
+.lockee .oos-checkbox:checked + .oos-label .oos-switch {
+	right: 0px; 
+}

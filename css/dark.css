@@ -1,0 +1,326 @@
+/*
+Dark.css
+Auteur : Nicolas Desmarets
+Copyright (c) 2019 Lockee.fr
+*/
+html {
+	background: #202020;
+	color: #DFDFDF;
+}
+
+.lockee .content{
+	border-image-source: url("../imgs/content-dark.png");
+}
+
+.lockee .content:before{
+	background-image: url("../imgs/corner-dark.png");
+}
+
+.lockee #close-dark{
+	display: inline;
+}
+	
+.lockee #close-light{
+	display:none;	
+}
+	
+.lockee .dark{
+	display:initial;
+}
+	
+.lockee .light{
+	display: none;
+}
+	
+.lockee h1, h2, h3, a {
+	color: #DFDFDF;
+}
+	
+.lockee textarea {
+    background: #202020;
+    color: #64B5F6;
+    border-color: #DFDFDF;
+}
+	
+.lockee textarea::placeholder{
+	color: #323232;
+}
+	
+.lockee .codeentry {
+	background: #202020;
+    color: #64B5F6;
+	border-color: #DFDFDF;
+}
+	
+.lockee .codeentry::placeholder {
+	color: #323232;
+}
+	
+.lockee #wrongcode {
+	background: #E57373;
+	color: #202020;
+}
+	
+.lockee .delete {
+	background: #323232;
+}
+	
+.lockee .cancel {
+	background: #E57373;
+	color: #202020;
+}
+	
+.lockee .confirm {
+	background: #81C784;
+	color: #202020;
+}
+	
+.lockee #contentI #inputimagecontainer, #contentS #inputsoundcontainer {
+	background: #64B5F6;
+}
+	
+.lockee #contentI #inputimagelabel, #contentS #inputsoundlabel {
+	color: #202020;
+}
+
+.lockee .menu-button {
+	background: #64B5F6;
+	color: #202020;
+}
+	
+.lockee .menu-tab {
+	background: #64B5F6;
+}
+	
+.lockee .disabled {
+	background: #323232;
+	color: #DFDFDF;
+}
+	
+.lockee .enabled {
+	background: #64B5F6;
+	color: #202020;
+}
+	
+.lockee .touch {
+	background: #64B5F6;
+	color: #202020;
+}
+
+.lockee .mini {
+	color: #202020;
+	background: #DFDFDF;
+}
+	
+.lockee #play, #position, #address {
+	background: #DFDFDF;
+	color: #202020;
+}
+	
+.lockee #errors, #errors a {
+	color: #E57373;
+}
+	
+.lockee .controls {
+	border-color: #DFDFDF;
+}
+	
+.lockee .img-controls {
+	background-position-x: right;
+}
+	
+.lockee .social{
+	background-position-x: right;
+}
+	
+.lockee .qrscan {
+	background: #323232;
+}
+	
+.lockee .buttonscan {
+	background: #A9A9A9;
+	color: #202020;
+}
+	
+.lockee .faq li.q {
+	background: #323232;
+	border-left-color: #FDFDFD;
+	box-shadow: 0px 0px 2px #323232;
+}
+	
+.lockee .piano-key .white{
+	background: #FDFDFD;
+	color: #272727;
+	border-color: #272727;
+}
+
+.lockee .piano-key .black{
+	background: #202020;
+	color: #DFDFDF;
+	border-color: #202020;
+}
+
+.lockee .key:active, .key.active {
+	background: #64B5F6;
+}
+	
+.lockee .onoff, .onoff div, .on {
+	border-color: #DFDFDF;	
+}
+	
+.lockee .on{
+	background: #64B5F6;
+	color: #202020;
+}
+	
+.lockee .oos-switch {
+	border-color: #A9A9A9;
+}
+
+.lockee .oos-inner:before {
+	background: #64B5F6;
+	color: #202020;
+}
+
+.lockee .oos-inner:after {
+	background: #323232;
+	color: #A9A9A9;
+}
+	
+.lockee svg.schema g.lock-actives circle {
+	fill: #64B5F6;
+}
+	
+.lockee svg.schema g.lock-dots circle {
+	fill: #DFDFDF;
+}
+
+.lockee svg.schema g.lock-lines line {
+	stroke: #64B5F6;
+}
+
+svg.schema g.lock-arrows path {
+	stroke: #202020;
+}
+
+.lockee #dropzone.active{
+	border-color: #64B5F6;
+}
+.lockee .button{
+	background: #64B5F6;
+	color: #202020;
+}
+.lockee #btnApiStart, .start{
+	background-color: #81C784;
+}
+.lockee #btnApiCancel, .stop{
+	background-color: #E57373;
+}
+.lockee #btnApiReset {
+	background-color: #E0E0E0;
+}
+.lockee #dropzone, .lockee #title-files, .lockee #files li,  {
+	border-color: #DFDFDF;
+}
+.lockee #files button{
+    border-color: transparent;
+    color: #202020;
+}
+.lockee .progress{
+	background-color: #323232;
+}
+.lockee .progress-bar{
+	background-color: #64B5F6;
+    color: #202020;
+}
+.lockee .bg-error{
+	background-color: #E57373;	
+}
+.lockee .bg-warning{
+	background-color: #FF6748;	
+}
+.lockee .bg-success{
+	background-color: #81C784;	
+}
+.lockee .text-error{
+	color: #E57373;
+}
+.lockee .text-warning{
+	color: #FF6748;
+}
+.lockee .text-success{
+	color: #81C784;
+}
+
+.lockee input[type="checkbox"].lock:checked:before {
+	border-color: #202020;	
+}
+
+.lockee input[type="checkbox"].lock:after {
+    border-color: #DFDFDF;
+}
+
+.lockee input[type="checkbox"].lock:checked:after {
+    background-color: #64B5F6;
+}
+
+.lockee .R{
+	background: #D32F2F;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .O{
+	background: #F57C00;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .J{
+	background: #FBC02D;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .P{
+	background: #7B1FA2;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .B{
+	background: #1976D2;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .V{
+	background: #388E3C;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .N{
+	background: #000000;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .G{
+	background: #757575;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .W{
+	background: #FFFFFF;
+	color: #CACACA;
+	border:solid 1px #999;
+}
+.lockee .M{
+	background: #6D4C41;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .K{
+	background: #F06292;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
+.lockee .I{
+	background: #303F9F;
+	color: #FDFDFD;
+	border:solid 1px #999;
+}
